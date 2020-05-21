@@ -1,0 +1,45 @@
+.chat-main
+  .chat-main__main-header
+    .chat-main__main-header__left-box
+      %h2.chat-main__main-header__left-box__current-group
+        test
+      %ul.chat-main__main-header__left-box__member-list
+        Member :
+        %li.chat-main__main-header__left-box__memberlist__member
+          Shuichi
+    %a{href: '#'}
+      .chat-main__main-header__edit-btn
+        Edit
+  .chat-main__messages
+    .chat-main__messages__message
+      .chat-main__messages__message__upper-info
+        %p.chat-main__messages__message__upper-info__talker
+          Shuichi
+        %p.chat-main__messages__message__upper-info__date
+          1628/05/20(Wed) 20:21:32
+      %p.chat-main__messages__message__text
+        aaa
+    .chat-main__messages__message
+      .chat-main__messages__message__upper-info
+        %p.chat-main__messages__message__upper-info__talker
+          Shuichi
+        %p.chat-main__messages__message__upper-info__date
+          1628/05/20(Wed) 20:21:32
+      %p.chat-main__messages__message__text
+        aaa
+    .chat-main__messages__message
+      .chat-main__messages__message__upper-info
+        %p.chat-main__messages__message__upper-info__talker
+          Shuichi
+        %p.chat-main__messages__message__upper-info__date
+          1628/05/20(Wed) 20:21:32
+      %p.chat-main__messages__message__text
+        aaa
+  .chat-main__form
+    %form.chat-main__form__new-message
+      .chat-main__form__new-message__input-box
+        %input.chat-main__form__new-message__input-box__text{type: "text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "file"}
+      %input.submit-btn{type: "submit",value: "Send"}
