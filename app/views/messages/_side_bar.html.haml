@@ -12,16 +12,9 @@
             = icon('fas', 'cog', class: 'icon')
   .chat-side__groups
     - current_user.groups.each do |group|
-      .group
-        = link_to '#' do
-          .group__name
+      .chat-side__groups__group
+        = link_to group_messages_path(group) do
+          .chat-side__groups__group__name
             = group.name
-          .group__message
-            メッセージはまだありません。
-    - current_user.groups.each do |group|
-      .group
-        = link_to '#' do
-          .group__name
-            = group.name
-          .group__message
-            メッセージはまだありません。
+          .chat-side__groups__group__message
+            = group.show_last_message
