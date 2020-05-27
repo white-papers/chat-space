@@ -87,6 +87,11 @@ $(function(){
     })
     .fail(function() {
       alert('error');
+    })
+    .always(function(data) {
+       $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
+       $('#new_message')[0].reset();
+       $('.submit-btn').prop('disabled',false);
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {

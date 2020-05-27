@@ -44,16 +44,17 @@ $btn-color: #38aef0;
     background-color: #2f3e51;
     &__group {
       padding: 20px 20px 40px 20px;
+      a {
+        text-decoration: none;
+      }    
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
         font-weight: bold;
-        text-decoration: none;
         color: #ffffff;
       }
       &__message {
         font-size: 11px;
-        text-decoration: none;
         display: inline-block;
         color: #ffffff;
       }
@@ -117,6 +118,7 @@ $btn-color: #38aef0;
         &__date {
           color: #999999;
           font-size: 12px;
+          margin-left: 10px;
         }
       }
       &__text {
@@ -143,7 +145,7 @@ $btn-color: #38aef0;
         }
         .input-box__image {
           position: absolute;
-          top: 15px;
+          top: 10px;
           right: 10px;
           cursor: pointer;
           .icon {
