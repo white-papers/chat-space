@@ -13,14 +13,6 @@
         Edit
   .chat-main__messages
     = render @messages
-    .chat-main__messages__message
-      .chat-main__messages__message__upper-info
-        %p.chat-main__messages__message__upper-info__talker
-          Shuichi
-        %p.chat-main__messages__message__upper-info__date
-          1628/05/20(Wed) 20:21:32
-      %p.chat-main__messages__message__text
-        aaa
   .chat-main__form
     = form_for [@group, @message], html: {class: 'chat-main__form__new-message'} do |f|
       .chat-main__form__new-message__input-box
